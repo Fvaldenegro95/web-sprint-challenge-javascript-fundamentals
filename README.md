@@ -4,7 +4,7 @@
 
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in project. This Sprint explored JavaScript Fundamentals. During this Sprint, you studied array methods, this keyword, prototypes, and class syntax. In your challenge this week, you will demonstrate proficiency by completing a range of JavaScript problems.
 
-This is an individual assessment. All work must be your own. Your challenge score is a measure of your ability to work independently using the material covered through this sprint. You need to demonstrate proficiency in the concepts and objectives introduced and practiced in preceding days.
+This is an individual assessment. All work must be your own. Your challenge score is a measure of your ability to work independently using the material covered through this sprint. You sneed to demonstrate proficiency in the concepts and objectives introduced and practiced in preceding days.
 
 You are not allowed to collaborate during the sprint challenge.
 
@@ -28,7 +28,13 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each.
 
+.map creates a new array populated with the results of calling a provided function of every element in the calling array.
+.reduce subtracts the numbers in the array, starting from the beginning.
+.filter creates a new array with all the elements that pass the test implemented by the provided function.
+
 2. Explain the difference between a callback and a higher order function.
+
+Higher order functions receive other functions, callback functions are passed into another function as an argument.
 
 3. Explain what a closure is.
 
@@ -36,10 +42,10 @@ Closure gives you access to an outer function's scope from an inner function.
 
 4. Describe the four principles of the 'this' keyword.
 
-Enclosing - object's methods and properties are enclosed within the object.
-Abstraction - Hiding complex details and showing simple ones, helps with readability
-Inheritance - allows the parent class to pass functionality to a child class
-Polymorphism - The same method being used in different objects
+Window binding is when we have not given 'this' any context it will return to the window, globally
+Implicit binding applies objects with methods
+Explicit binding is when we tell a function the 'this' keyword should be using .call, .apply or .bind
+New binding is when you invoke the function with a new keyword the this keyword inside of a function is bound to the new object being constructed.
 
 5. Why do we need super() in an extended class?
 

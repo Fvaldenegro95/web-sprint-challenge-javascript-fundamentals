@@ -2,6 +2,7 @@
 /* 🚀🚀🚀🤓 Task 1: 🤓🚀🚀🚀 
 Study the code below and explain in your own words why nested function can access the variable internal. */
 
+const { Scope } = require("@babel/traverse");
 const { isMetaProperty } = require("@babel/types");
 
 const external = "I'm outside the function";
@@ -19,9 +20,8 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-// 
-
-
+// Because it is in the correct Scope.
+ 
 
 /* 🚀🚀🚀 Task 2: Counter 🚀🚀🚀 */
 /* Use summation to do the following:
